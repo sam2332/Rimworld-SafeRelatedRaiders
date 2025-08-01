@@ -47,14 +47,22 @@ This mod prevents raiders who are blood or bonded relations of your colonists fr
 
 ### Death Prevention Mechanism
 - Sets `pawn.health.forceDowned = true`
+- Damages legs to incapacitate movement (based on `HealthUtility.DamageLegsUntilIncapableOfMoving`)
+- Uses blunt damage on moving limb core parts (12-27% of max health per damage)
+- Checks `WouldDieAfterAddingHediff()` before applying damage to prevent accidental death
 - Heals critical brain injuries to 70% of max health
 - Heals critical torso injuries to 70% of max health
+- Calls `CheckForStateChange()` to ensure proper health state transitions
 - Prevents immediate re-death from existing injuries
 
 ### Notification System
 - Optional letter notification when raider is saved
 - Shows relationship type using `GetGenderSpecificLabel()`
 - Uses `LetterDefOf.NeutralEvent` for non-urgent notification
+- **NEW**: Notification throttling to prevent spam
+  - Tracks recently saved pawns in `HashSet<Pawn>`
+  - Only shows notification once per pawn within cooldown period (1 second)
+  - Automatic cleanup of tracking data every ~1 minute
 
 ## Compatibility Considerations
 

@@ -31,6 +31,38 @@
 - Player faction: `Faction.OfPlayer`
 - Map colonists: `map.mapPawns.FreeColonists`
 
+## Current Issues Fixed (January 2025)
+
+### Problem 1: Too Many Notifications
+**Issue**: Mod was sending a letter for every raider saved, causing notification spam
+**Solution**: Added notification throttling system:
+- Track recently saved pawns in `HashSet<Pawn> recentlySavedPawns`
+- Only send notification if pawn wasn't recently saved
+- Periodic cleanup of tracking set every ~1 minute
+
+### Problem 2: Raiders Not Staying Down  
+**Issue**: Setting `forceDowned = true` wasn't sufficient - pawns would get back up
+**Solution**: Implemented proper incapacitation like the game does:
+- Use `HealthUtility.DamageLegsUntilIncapableOfMoving()` pattern
+- Damage moving limb core parts with blunt damage (12-27% of max health)
+- Check `WouldDieAfterAddingHediff()` before damaging to prevent accidental death
+- Set `forceDowned = true` AND actually incapacitate through injury
+
+### Key Code Changes
+1. Added `using UnityEngine;` for `Mathf` access
+2. Fixed syntax error (extra `{` brace)
+3. Added `CleanupOldNotifications()` method
+4. Replaced simple `forceDowned` with proper `DamageLegsToIncapacitate()` method
+5. Added notification cooldown tracking with `recentlySavedPawns` HashSet
+6. Improved notification system to prevent spam
+
+### Implementation Notes
+- Based downing logic on game's `HealthUtility.DamageLegsUntilIncapableOfMoving()`
+- Uses moving limb core parts targeting with blunt damage to avoid bleeding
+- Heals critical brain/torso injuries to prevent immediate re-death
+- Calls `CheckForStateChange()` to ensure proper health state transitions
+- Notification cooldown prevents spam while still informing player of saves
+
 ## Implementation Notes
 
 ### Harmony Patch Strategy

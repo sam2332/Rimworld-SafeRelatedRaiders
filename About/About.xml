@@ -54,6 +54,6 @@ The mod uses safe Harmony patching with minimal performance impact and is compat
   </incompatibleWith> -->
   
   <!-- Mod version (optional but recommended) -->
-  <modVersion>0.0.1</modVersion>
+  <modVersion>1.0.0</modVersion>
   
 </ModMetaData>
