@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData> 
+  
+  <!-- Author information -->
+  <author>ProgrammerLily</author>
+  
+   <!-- Unique identifier for your mod - change this to something unique -->
+  <packageId>SafeRelatedRaiders.ProgrammerLily.com</packageId>
+  
+  <!-- Display name of your mod -->
+  <name>Safe Related Raiders</name>
+  
+  <!-- Author information -->
+  <author>ProgrammerLily</author>
+  
+  <!-- Mod description -->
+  <description>Prevents raiders who are blood or bonded relations of your colonists from dying outright during raids. Instead, if they would normally die, they are downed instead—allowing you the chance to capture, rescue, or recruit them.</description>
+
+  <!-- Supported game versions -->
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  
+  <!-- URL to your mod's page or repository (optional) -->
+  <url>https://github.com/ProgrammerLily/ModTemplate</url>
+  
+  <!-- Load order dependencies (optional) -->
+  <!-- Force this mod to load after the core game -->
+  <forceLoadAfter>
+    <li>Ludeon.RimWorld</li>
+  </forceLoadAfter>
+  
+  <!-- Force this mod to load before other mods (if needed) -->
+  <!-- <forceLoadBefore>
+    <li>SomeOtherMod.PackageId</li>
+  </forceLoadBefore> -->
+  
+  <!-- Required mods (dependencies) - uncomment if needed -->
+  <!-- <dependencies>
+    <li>Ludeon.RimWorld</li>
+  </dependencies> -->
+  
+  <!-- Incompatible mods - uncomment if needed -->
+  <!-- <incompatibleWith>
+    <li>IncompatibleMod.PackageId</li>
+  </incompatibleWith> -->
+  
+  <!-- Mod version (optional but recommended) -->
+  <modVersion>0.0.1</modVersion>
+  
+</ModMetaData>
