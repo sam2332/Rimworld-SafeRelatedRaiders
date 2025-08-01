@@ -16,12 +16,15 @@
 Features:
 • Configurable relationship protection for spouses, lovers, fiances, parents, children, siblings, and bonded animals
 • Smart detection that only affects hostile raiders, not your colonists or friendlies
+• Proper incapacitation system that ensures saved raiders stay down
 • Automatically heals life-threatening injuries when saving a raider
-• Optional notifications when raiders are saved
+• Intelligent notification system with spam prevention
 • Individual toggles for each relationship type
 • Per-save settings that persist with your game
 
 The mod uses safe Harmony patching with minimal performance impact and is compatible with most health, combat, and relationship mods. Access settings through Options → Mod Settings → Safe Related Raiders.
+
+Recent improvements: Enhanced downing mechanics ensure raiders stay incapacitated, and smart notification throttling prevents message spam.
 
 "Keep families together, even in the chaos of the Rim."</description>
   <!-- Supported game versions -->

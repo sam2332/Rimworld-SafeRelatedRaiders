@@ -8,7 +8,9 @@ A RimWorld mod that prevents raiders who are blood or bonded relations of your c
 - **Relationship Protection**: Raiders with qualifying relationships to your colonists are saved from death
 - **Configurable Relationships**: Choose which types of relationships to protect
 - **Smart Detection**: Only affects hostile raiders, not your colonists or friendlies
+- **Proper Incapacitation**: Uses game mechanics to ensure saved raiders actually stay down
 - **Critical Injury Healing**: Automatically heals life-threatening injuries when saving a raider
+- **Intelligent Notifications**: Smart throttling prevents notification spam
 
 ### Supported Relationships
 - **Spouses** - Married partners
@@ -39,8 +41,9 @@ When a raider would normally die from injuries:
 1. **Check Hostility**: Verify the pawn is actually a hostile raider
 2. **Scan Relationships**: Look for qualifying relationships with living colonists
 3. **Prevent Death**: Force the raider to be downed instead of killed
-4. **Heal Critical Injuries**: Automatically reduce fatal brain/torso injuries
-5. **Notify Player**: Show optional notification with relationship details
+4. **Incapacitate Properly**: Damage legs to ensure they stay down using game mechanics
+5. **Heal Critical Injuries**: Automatically reduce fatal brain/torso injuries
+6. **Notify Player**: Show optional notification with relationship details (throttled to prevent spam)
 
 ## Compatibility
 
@@ -88,6 +91,12 @@ A: Yes - each relationship type has its own toggle in the settings.
 **Q: Will this conflict with other death-related mods?**
 A: Unlikely - the mod uses safe Harmony patching and only affects the specific death scenario.
 
+**Q: Do saved raiders actually stay down?**
+A: Yes - the mod uses proper game mechanics to incapacitate raiders by damaging their legs, ensuring they remain downed until treated or rescued.
+
+**Q: Will I get spammed with notifications?**
+A: No - the mod has intelligent notification throttling that prevents multiple messages for the same raider within a short time period.
+
 ## Development
 
 ### Source Code
@@ -110,7 +119,9 @@ Pull requests welcome! Please follow RimWorld modding conventions.
 - Initial release
 - Core death prevention functionality
 - Configurable relationship types
-- Notification system
+- Notification system with intelligent throttling
+- Proper incapacitation mechanics ensure raiders stay down
+- Critical injury healing system
 - Comprehensive settings UI
 
 ## Credits
