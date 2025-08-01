@@ -91,7 +91,7 @@ A: Unlikely - the mod uses safe Harmony patching and only affects the specific d
 ## Development
 
 ### Source Code
-Available on GitHub: https://github.com/ProgrammerLily/SafeRelatedRaiders
+Available on Steam store at: https://steamcommunity.com/sharedfiles/filedetails/?id=3539795384
 
 ### Bug Reports
 Please report issues on GitHub with:

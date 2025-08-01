@@ -11,8 +11,19 @@
   <name>[PL] Safe Related Raiders</name>
   
   <!-- Mod description -->
-  <description>Prevents raiders who are blood or bonded relations of your colonists from dying outright during raids. Instead, if they would normally die, they are downed instead—allowing you the chance to capture, rescue, or recruit them.</description>
+<description>Prevents raiders who are blood or bonded relations of your colonists from dying outright during raids. Instead, if they would normally die, they are downed instead—allowing you the chance to capture, rescue, or recruit them.
 
+Features:
+• Configurable relationship protection for spouses, lovers, fiances, parents, children, siblings, and bonded animals
+• Smart detection that only affects hostile raiders, not your colonists or friendlies
+• Automatically heals life-threatening injuries when saving a raider
+• Optional notifications when raiders are saved
+• Individual toggles for each relationship type
+• Per-save settings that persist with your game
+
+The mod uses safe Harmony patching with minimal performance impact and is compatible with most health, combat, and relationship mods. Access settings through Options → Mod Settings → Safe Related Raiders.
+
+"Keep families together, even in the chaos of the Rim."</description>
   <!-- Supported game versions -->
   <supportedVersions>
     <li>1.6</li>
