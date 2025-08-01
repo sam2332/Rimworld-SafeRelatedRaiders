@@ -8,10 +8,7 @@
   <packageId>SafeRelatedRaiders.ProgrammerLily.com</packageId>
   
   <!-- Display name of your mod -->
-  <name>Safe Related Raiders</name>
-  
-  <!-- Author information -->
-  <author>ProgrammerLily</author>
+  <name>[PL] Safe Related Raiders</name>
   
   <!-- Mod description -->
   <description>Prevents raiders who are blood or bonded relations of your colonists from dying outright during raids. Instead, if they would normally die, they are downed instead—allowing you the chance to capture, rescue, or recruit them.</description>
@@ -22,7 +19,7 @@
   </supportedVersions>
   
   <!-- URL to your mod's page or repository (optional) -->
-  <url>https://github.com/ProgrammerLily/ModTemplate</url>
+  <url>https://github.com/sam2332/Rimworld-SafeRelatedRaiders</url>
   
   <!-- Load order dependencies (optional) -->
   <!-- Force this mod to load after the core game -->
