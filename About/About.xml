@@ -8,7 +8,7 @@
   <packageId>SafeRelatedRaiders.ProgrammerLily.com</packageId>
   
   <!-- Display name of your mod -->
-  <name>[PL] Safe Related Raiders</name>
+  <name>Safe Related Raiders</name>
   
   <!-- Mod description -->
 <description>Prevents raiders who are blood or bonded relations of your colonists from dying outright during raids. Instead, if they would normally die, they are downed instead—allowing you the chance to capture, rescue, or recruit them.
@@ -57,6 +57,6 @@ Recent improvements: Enhanced downing mechanics ensure raiders stay incapacitate
   </incompatibleWith> -->
   
   <!-- Mod version (optional but recommended) -->
-  <modVersion>1.0.0</modVersion>
+  <modVersion>1.0.1</modVersion>
   
 </ModMetaData>
